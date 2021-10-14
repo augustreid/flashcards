@@ -19,6 +19,11 @@ class Round {
     this.recordGuess();
     this.returnFeedback();
     this.updateCard();
+    if (this.currentTurn.evaluateGuess()) {
+      return "correct!"
+    } else {
+      return "incorrect!"
+    }
   };
   updateTurns() {
     this.turns++;
@@ -30,7 +35,8 @@ class Round {
     };
   };
   returnFeedback() {
-    return this.currentTurn.giveFeedback();
+    let message = this.currentTurn.giveFeedback();
+    return message;
   };
   updateCard() {
     this.currentCard = this.deck.cards[this.turns];
