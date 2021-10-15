@@ -2,32 +2,32 @@ class Turn {
   constructor(guess, card) {
     this.guess = guess;
     this.card = card;
-  };
-  
+    this.isCorrect = false;
+  }
+
   returnGuess() {
     return this.guess;
-  };
+  }
 
   returnCard() {
     return this.card;
-  };
+  }
 
   evaluateGuess() {
     if (this.guess === this.card.correctAnswer) {
-      return true;
-    } else {
-      return false;
-    };
-  };
+      this.isCorrect = true;
+      return this.isCorrect;
+    }
+  }
 
   giveFeedback() {
-    if (this.guess === this.card.correctAnswer) {
+    if (this.isCorrect) {
       return "correct!";
     } else {
       return "incorrect!";
-    };
-  };
-};
+    }
+  }
+}
 
 
 module.exports = Turn;
