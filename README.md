@@ -5,7 +5,7 @@ The goal of this project was to practice TDD, write tests with Mocha and Chai,
 and practice class to class interaction. The final result is a flashcards style
 quiz game that can be played in the terminal.
 
-![flash cards example gif](https://share.getcloudapp.com/Kou7DWdb)
+![Screen Recording 2021-10-14 at 07 15 24 PM](https://user-images.githubusercontent.com/87552193/137419090-97ce0c50-f59b-4489-849c-0b29e345a61c.gif)
 
 ## Technologies Used
  - JavaScript
